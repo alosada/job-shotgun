@@ -4,13 +4,62 @@
   <meta charset="UTF-8">
   <title>Job Shotgun!</title>
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="http://gdc.indeed.com/ads/apiresults.js"></script>
 </head>
 <body>
   <div data-comp="main">
-    main
+    <div data-comp="top-bar">
+      <img src="img/shotgun.png" alt="shotgun" class="ib float-left">
+      <H1 class="ib">Job Shotgun</H1>
+    </div>
+    <div data-comp="job-container" class="idden">
+      <div data-comp="form">
+        <form class="hidden">
+          <input type="text" name="career" value="Web Developer">
+          <input type="text" name="city" value="">
+          <input type="text" name="state" value="" class="w2em">
+          <input type="text" name="country" value="" class="w2em">
+          <input type="text" name="radius" value="25" class="w2em"> mi radius.
+          Posted <input type="text" name="days" value="1" class="w2em"> days ago.
+          <input type="submit">
+        </form>
+      </div>
+      <div data-comp="jobs">
+        <ul>
+          <li>
+            <div id="job-template" class="job-listing">
+              <a href="">
+                <div class="float-left job-title">Job Tittle</div>
+                <div class="job-description">Job description. Lorem ipsum dolor sit amet. Patria dollar guerra economica pelucones la derecha el socialismo. Comandante Eterno supremo. Que bello, que bonito. Capuskicapubul. El pajarito con el espiritu de chiabe.</div>
+              </a>
+                <div class="float-right job-logo">
+                  <span id="indeed_at">
+                    job by
+                    <a href="http://www.indeed.com/" title="Job Search">
+                      <img src="http://www.indeed.com/p/jobsearch.gif" style="border: 0; vertical-align: middle;" alt="Indeed job search">
+                    </a>
+                  </span>
+                </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div data-comp="loading" class="hidden">
+      <img src="img/loading.gif" alt="Loading...">
+    </div>
+    <div data-comp="footer">
+      <h3>&copy Alejandro E. Losada - <a href="http://www.alejandrolosada.net">www.alejandrolosada.net</a></h3>
+    </div>
+  </div>
+  <div id="job-template" class="job-listing hidden">
+    <a href="">
+      <div>...</div>
+    </a>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" href="http://gdc.indeed.com/ads/apiresults.js"></script>
-  <script src="app.js"></script>
+  <!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBnd7P91WCbWNfHX_jtP2mU5kMrRxFwMXw"></script>-->
+  <script src="js/app.js"></script>
 </body>
 </html>
